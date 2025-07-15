@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;family=Space+Grotesk:wght@300;400;500;600;700;800&amp;family=Orbitron:wght@400;700;900"
+    />
+    <title>Fakepixel Giveaways</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'grotesk': ['Space Grotesk', 'Inter', 'sans-serif'],
+              'inter': ['Inter', 'sans-serif'],
+              'orbitron': ['Orbitron', 'monospace'],
+            },
+            colors: {
+              'brand': {
+                50: '#fefaf2',
+                100: '#fef2d8',
+                200: '#fce4b0',
+                300: '#f9cf7e',
+                400: '#f5b44a',
+                500: '#e5a119',
+                600: '#d48b0f',
+                700: '#b0700e',
+                800: '#8f5912',
+                900: '#764912',
+              },
+              'dark': {
+                50: '#f7f6f4',
+                100: '#edeae5',
+                200: '#ddd7cb',
+                300: '#c8b693',
+                400: '#a8956e',
+                500: '#8b7a5a',
+                600: '#766548',
+                700: '#62533c',
+                800: '#524635',
+                900: '#473b24',
+                950: '#221c11',
+              },
+              'cyber': {
+                50: '#ecfeff',
+                100: '#cffafe',
+                200: '#a5f3fc',
+                300: '#67e8f9',
+                400: '#22d3ee',
+                500: '#06b6d4',
+                600: '#0891b2',
+                700: '#0e7490',
+                800: '#155e75',
+                900: '#164e63',
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.8s ease-in-out',
+              'slide-up': 'slideUp 0.8s ease-out',
+              'slide-down': 'slideDown 0.8s ease-out',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+              'float': 'float 6s ease-in-out infinite',
+              'bounce-slow': 'bounceSlow 3s ease-in-out infinite',
+              'particle': 'particle 20s linear infinite',
+              'pulse-slow': 'pulseSlow 4s ease-in-out infinite',
+              'matrix': 'matrix 20s linear infinite',
+              'neon-pulse': 'neonPulse 2s ease-in-out infinite alternate',
+              'gradient-shift': 'gradientShift 3s ease-in-out infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              slideUp: {
+                '0%': { opacity: '0', transform: 'translateY(40px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              slideDown: {
+                '0%': { opacity: '0', transform: 'translateY(-40px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              glow: {
+                '0%': { boxShadow: '0 0 5px rgb(229, 161, 25), 0 0 10px rgb(229, 161, 25)' },
+                '100%': { boxShadow: '0 0 20px rgb(229, 161, 25), 0 0 30px rgb(229, 161, 25), 0 0 40px rgb(229, 161, 25)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              bounceSlow: {
+                '0%, 100%': { transform: 'translateY(0%)' },
+                '50%': { transform: 'translateY(-25%)' },
+              },
+              particle: {
+                '0%': { transform: 'translateY(100vh) translateX(0px)', opacity: '1' },
+                '100%': { transform: 'translateY(-100vh) translateX(100px)', opacity: '0' },
+              },
+              pulseSlow: {
+                '0%, 100%': { opacity: '0.7' },
+                '50%': { opacity: '1' },
+              },
+              matrix: {
+                '0%': { transform: 'translateY(100vh)', opacity: '1' },
+                '100%': { transform: 'translateY(-100vh)', opacity: '0' },
+              },
+              neonPulse: {
+                '0%': { textShadow: '0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor' },
+                '100%': { textShadow: '0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor' },
+              },
+              gradientShift: {
+                '0%, 100%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      .glass-effect {
+        background: rgba(71, 59, 36, 0.8);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(200, 182, 147, 0.2);
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, #e5a119, #f5b44a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .cyber-gradient {
+        background: linear-gradient(135deg, #06b6d4, #22d3ee, #67e8f9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .page { display: none; }
+      .page.active { display: block; }
+
+      /* Opening Animation Styles */
+      .opening-animation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #0f0f0f);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        opacity: 1;
+        transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+        backdrop-filter: blur(10px);
+      }
+
+      .opening-animation.fade-out {
+        opacity: 0;
+        transform: scale(1.1);
+        pointer-events: none;
+      }
+
+      .typing-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Space Grotesk', sans-serif;
+        animation: containerEntrance 1s ease-out;
+      }
+
+      .typing-text {
+        font-size: clamp(2rem, 5vw, 4rem);
+        font-weight: 700;
+        background: linear-gradient(135deg, #e5a119, #f5b44a, #e5a119);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin: 0;
+        white-space: nowrap;
+        animation: gradientShift 3s ease-in-out infinite;
+        filter: drop-shadow(0 0 20px rgba(229, 161, 25, 0.3));
+      }
+
+      .cursor {
+        font-size: clamp(2rem, 5vw, 4rem);
+        color: #e5a119;
+        animation: smoothBlink 1.5s ease-in-out infinite;
+        margin-left: 4px;
+        filter: drop-shadow(0 0 10px rgba(229, 161, 25, 0.5));
+      }
+
+      @keyframes containerEntrance {
+        0% {
+          opacity: 0;
+          transform: translateY(30px) scale(0.9);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes smoothBlink {
+        0%, 45% { opacity: 1; }
+        50%, 95% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+      .text-fade-out {
+        animation: textFadeOut 1.5s ease-out forwards;
+      }
+
+      @keyframes textFadeOut {
+        0% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+      }
+
+      /* Loading Animation for page transitions */
+      .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #0f0f0f);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 8888;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        backdrop-filter: blur(15px);
+      }
+
+      .loading-overlay.active {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .loading-logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        animation: smoothLoadingPulse 2s ease-in-out infinite;
+        filter: drop-shadow(0 0 25px rgba(229, 161, 25, 0.6));
+      }
+
+      @keyframes smoothLoadingPulse {
+        0%, 100% {
+          transform: scale(1) rotate(0deg);
+          opacity: 0.8;
+        }
+        50% {
+          transform: scale(1.15) rotate(180deg);
+          opacity: 1;
+        }
+      }
+
+      .loading-text {
+        color: #e5a119;
+        font-size: 18px;
+        font-weight: 600;
+        animation: smoothLoadingDots 2s ease-in-out infinite;
+        font-family: 'Space Grotesk', sans-serif;
+        letter-spacing: 0.5px;
+      }
+
+      @keyframes smoothLoadingDots {
+        0%, 20% { content: "Loading"; }
+        40% { content: "Loading."; }
+        60% { content: "Loading.."; }
+        80%, 100% { content: "Loading..."; }
+      }
+
+      .loading-text::after {
+        content: "Loading";
+        animation: smoothLoadingDots 2s ease-in-out infinite;
+      }
+      
+      /* Home Page Particles */
+      .particles {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+      }
+      
+      .particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: rgba(229, 161, 25, 0.6);
+        border-radius: 50%;
+        animation: particle linear infinite;
+      }
+      
+      .particle:nth-child(1) { left: 10%; animation-duration: 15s; animation-delay: 0s; }
+      .particle:nth-child(2) { left: 20%; animation-duration: 20s; animation-delay: 2s; }
+      .particle:nth-child(3) { left: 30%; animation-duration: 18s; animation-delay: 4s; }
+      .particle:nth-child(4) { left: 40%; animation-duration: 22s; animation-delay: 6s; }
+      .particle:nth-child(5) { left: 50%; animation-duration: 16s; animation-delay: 8s; }
+      .particle:nth-child(6) { left: 60%; animation-duration: 24s; animation-delay: 10s; }
+      .particle:nth-child(7) { left: 70%; animation-duration: 19s; animation-delay: 12s; }
+      .particle:nth-child(8) { left: 80%; animation-duration: 21s; animation-delay: 14s; }
+      .particle:nth-child(9) { left: 90%; animation-duration: 17s; animation-delay: 16s; }
+      .particle:nth-child(10) { left: 95%; animation-duration: 23s; animation-delay: 18s; }
+
+      /* Staff Page Matrix Effect */
+      .matrix-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+        overflow: hidden;
+      }
+
+      .matrix-char {
+        position: absolute;
+        color: #00ff41;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        animation: matrix linear infinite;
+        opacity: 0.7;
+      }
+
+      /* Giveaways Page Discord Effect */
+      .discord-particle {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: #5865F2;
+        border-radius: 50%;
+        animation: float 4s ease-in-out infinite;
+      }
+
+      /* Updates Page Cyber Grid */
+      .cyber-grid {
+        background-image: 
+          linear-gradient(rgba(6, 182, 212, 0.1) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px);
+        background-size: 50px 50px;
+      }
+
+      .neon-border {
+        border: 2px solid #06b6d4;
+        box-shadow: 
+          0 0 5px #06b6d4,
+          inset 0 0 5px #06b6d4,
+          0 0 20px #06b6d4;
+      }
+
+      /* Credits Page Minimalist */
+      .minimal-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Love particles for credits page */
+      .love-particle {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        opacity: 0.8;
+        animation: loveFloat 8s ease-in-out infinite;
+        pointer-events: none;
+      }
+
+      @keyframes loveFloat {
+        0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+      }
+
+      /* Contact Page Neon */
+      .neon-glow {
+        box-shadow: 
+          0 0 5px currentColor,
+          0 0 20px currentColor,
+          0 0 40px currentColor,
+          0 0 80px currentColor;
+      }
+      
+      /* Navigation Styles */
+      .nav-item {
+        position: relative;
+        transition: all 0.3s ease;
+      }
+      
+      .nav-item::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #e5a119, #f5b44a);
+        transition: width 0.3s ease;
+      }
+      
+      .nav-item.active::after {
+        width: 100%;
+      }
+    </style>
+</head>
+<body class="font-grotesk antialiased overflow-x-hidden">
+    
+    <!-- Opening Animation -->
+    <div id="opening-animation" class="opening-animation">
+      <div class="typing-container">
+        <div class="relative">
+          <h1 id="typing-text" class="typing-text"></h1>
+          <span id="cursor" class="cursor">|</span>
+          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-brand-400/20 to-transparent opacity-0 animate-pulse"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading Overlay for page transitions -->
+    <div id="loading-overlay" class="loading-overlay">
+      <div class="relative">
+        <img id="loading-logo-img" src="https://cdn.discordapp.com/icons/1246452712653062175/a_31b8d1bbd6633b72eff08a3a35f3bb0b.gif?size=80&quality=lossless" alt="FxG Logo" class="loading-logo" onerror="handleLogoError(this, 'loading')" />
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-brand-400/10 to-transparent rounded-full animate-pulse"></div>
+      </div>
+      <div class="loading-text mt-4"></div>
+    </div>
+    
+    <div id="app-container" class="relative min-h-screen">
+      
+      <!-- Universal Header -->
+      <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 text-brand-500 animate-float">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                  <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h1 class="text-xl font-bold gradient-text">Fakepixel Giveaways</h1>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+              <a href="#" onclick="showPage('home')" class="nav-item text-sm font-medium transition-colors duration-200">Home</a>
+              <a href="#" onclick="showPage('staff')" class="nav-item text-sm font-medium transition-colors duration-200">Staff</a>
+              <a href="#" onclick="showPage('giveaways')" class="nav-item text-sm font-medium transition-colors duration-200">Giveaways</a>
+              <a href="#" onclick="showPage('updates')" class="nav-item text-sm font-medium transition-colors duration-200">Updates</a>
+              <a href="#" onclick="showPage('credits')" class="nav-item text-sm font-medium transition-colors duration-200">Credits</a>
+              <a href="#" onclick="showPage('contact')" class="nav-item text-sm font-medium transition-colors duration-200">Contact</a>
+            </nav>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+              <button onclick="toggleMobileMenu()" class="p-2 rounded-lg transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          
+          <!-- Mobile menu -->
+          <div id="mobile-menu" class="md:hidden hidden py-4">
+            <div class="flex flex-col space-y-2">
+              <a href="#" onclick="showPage('home')" class="block px-3 py-2 text-sm font-medium transition-colors duration-200">Home</a>
+              <a href="#" onclick="showPage('staff')" class="block px-3 py-2 text-sm font-medium transition-colors duration-200">Staff</a>
+              <a href="#" onclick="showPage('giveaways')" class="block px-3 py-2 text-sm font-medium transition-colors duration-200">Giveaways</a>
+              <a href="#" onclick="showPage('updates')" class="block px-3 py-2 text-sm font-medium transition-colors duration-200">Updates</a>
+              <a href="#" onclick="showPage('credits')" class="block px-3 py-2 text-sm font-medium transition-colors duration-200">Credits</a>
+              <a href="#" onclick="showPage('contact')" class="block px-3 py-2 text-sm font-medium transition-colors duration-200">Contact</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- HOME PAGE - Golden Luxury Theme -->
+      <div id="home-page" class="page active">
+        <!-- Particle Background -->
+        <div class="particles">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+        </div>
+
+        <div class="min-h-screen bg-gradient-to-br from-dark-950 via-dark-900 to-dark-800 text-white">
+          <!-- Hero Section -->
+          <section class="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
+            <div class="absolute inset-0 bg-gradient-to-br from-brand-500/10 via-transparent to-dark-800/50"></div>
+            <div class="relative z-10 max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+              <div class="space-y-4">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight animate-slide-down">
+                  Welcome to <span class="gradient-text">Fakepixel</span><br>
+                  <span class="text-dark-200">Giveaways</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-dark-300 max-w-2xl mx-auto leading-relaxed animate-slide-up">
+                  Join our vibrant community of Minecraft enthusiasts and staff, where exciting giveaways and fantasy adventures await.
+                </p>
+              </div>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 0.3s">
+                <button onclick="showPage('giveaways')" class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-gradient-to-r from-brand-500 to-brand-600 text-dark-950 font-bold text-lg hover:from-brand-400 hover:to-brand-500 transform hover:scale-105 transition-all duration-300 animate-glow">
+                  Explore Giveaways
+                </button>
+                <a href="https://discord.gg/We6pY3TARP" target="_blank" class="inline-flex items-center justify-center px-8 py-4 rounded-xl border-2 border-dark-600 text-white font-semibold text-lg hover:bg-dark-800 transition-all duration-300 transform hover:scale-105">
+                  Join Discord
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Community Highlights -->
+          <section class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-900/50">
+            <div class="max-w-7xl mx-auto">
+              <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4 animate-fade-in">Community <span class="gradient-text">Highlights</span></h2>
+                <p class="text-dark-300 text-lg max-w-2xl mx-auto animate-fade-in" style="animation-delay: 0.2s">Discover what makes our community special</p>
+              </div>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-300 animate-slide-up">
+                  <div class="aspect-video rounded-xl bg-gradient-to-br from-brand-500/20 to-brand-600/30 mb-6 overflow-hidden">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzXW710P_vCxS6TyV4yuXChn_fZf5E1wfV6NQgsxh-BRePD9xRlvs_I2AWHSzQfLhvZeFiDjFZ5ZT5e6juCVcspW6u9JA_afuOd7xptmcqSgZqPXiQSn0ANhlJ88N6goP8ZqrL_7gjcWpdMYZpjh7mBazK6rcLOkQEU-sa7Nx0YrTxEUGwGVorHLJDrf7FRGgUDUm2z9WeYPI56ozWs4CmQxGF31PAlp1UpTw2toAXdyyJaVwCZ3mRmG7cdDEkcDPD199s4724b2B9" alt="30M+ Coins Giveaway" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                  </div>
+                  <h3 class="text-xl font-semibold mb-3 text-white">30M+ Coins & Items</h3>
+                  <p class="text-dark-300 leading-relaxed">Over 30 million coins and rare items have been given away to our amazing community members.</p>
+                </div>
+                
+                <div class="group glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-300 animate-slide-up" style="animation-delay: 0.1s">
+                  <div class="aspect-video rounded-xl bg-gradient-to-br from-brand-500/20 to-brand-600/30 mb-6 overflow-hidden">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBACl5n5spZRp_webPV0nVFL7YOVphyGOJQZmvFum4-zOUtCnrtNkNyNXtxVkGINnxYzy0EMepPtu73xoPAqxMd0iz76rVOE9WGgsJLTlooxTRfEXPYSvZ2S7Nb9K_vMsyumpxCNwRIFA_j-ER2MP3vkPFwh8cEIsZUrnaJgQY7XAt59l6EpSLBcx84oJQBT6q2mZRoZ9debXR613-VuiBYmNAL8nlqdHSl5fHtiLszcB2zwCVREb-IJL4sVJnp4_snClold7ewkfl" alt="24/7 Moderation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                  </div>
+                  <h3 class="text-xl font-semibold mb-3 text-white">24/7 Moderation</h3>
+                  <p class="text-dark-300 leading-relaxed">Our dedicated staff team provides round-the-clock moderation to ensure a safe and friendly environment.</p>
+                </div>
+                
+                <div class="group glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-300 animate-slide-up" style="animation-delay: 0.2s">
+                  <div class="aspect-video rounded-xl bg-gradient-to-br from-brand-500/20 to-brand-600/30 mb-6 overflow-hidden">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuArjFMlF68pOMcBTSRfFC9Rbsz9h0hjkV83tQlaypsaIQ8nczIxUsIIXuB6cYLPvvzdoIaqLWTOb1s7dX_goZboRSS1sBLNgu7tDGcwtlRpqSECC0u-ZPPVpz1a3rOTtBFCJFu401xPeXJxuStoFy34BEsztbqzl5t1vk3InDpq71cp4aGegCLLWid4RhCTw5X34W21UIKCEFCx5bRDPInPvCHi5dtE7Zu61vE8ZGOSKMXYmdbqVSSPSydBAOYv_V8OiZhk0ZbJSl2y" alt="Exclusive Bots" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                  </div>
+                  <h3 class="text-xl font-semibold mb-3 text-white">Exclusive Bots</h3>
+                  <p class="text-dark-300 leading-relaxed">Custom-developed bots made by our developers to enhance your server experience and gameplay.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- STAFF PAGE - Golden Luxury Theme -->
+      <div id="staff-page" class="page">
+        <!-- Particle Background -->
+        <div class="particles">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+        </div>
+
+        <div class="min-h-screen bg-gradient-to-br from-dark-950 via-dark-900 to-dark-800 text-white">
+          <section class="py-16 px-4 sm:px-6 lg:px-8 pt-20">
+            <div class="max-w-7xl mx-auto relative z-10">
+              <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4 animate-fade-in">
+                  Our <span class="gradient-text">Staff Team</span>
+                </h2>
+                <p class="text-dark-300 text-lg max-w-2xl mx-auto animate-fade-in" style="animation-delay: 0.2s">
+                  Meet the dedicated individuals who make our community amazing
+                </p>
+              </div>
+              
+              <!-- Owners -->
+              <div class="mb-12">
+                <h3 class="text-xl font-bold text-center mb-6 gradient-text">Owners</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 justify-center max-w-4xl mx-auto">
+                  <div class="group text-center space-y-4 p-6 glass-effect rounded-2xl hover:scale-105 transition-all duration-300 animate-slide-up">
+                    <div class="relative mx-auto w-20 h-20 sm:w-24 sm:h-24">
+                      <img src="https://cdn.discordapp.com/avatars/887900930647916605/4c92c4587f376565efe3de55f1a24645.webp?size=128" alt="Real_King4Life" class="w-full h-full object-cover rounded-full ring-2 ring-brand-500/50 group-hover:ring-brand-400 transition-all duration-300" />
+                      <div class="absolute inset-0 rounded-full bg-brand-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-white">Real_King4Life</h4>
+                      <p class="text-sm text-brand-400">Owner</p>
+                    </div>
+                  </div>
+                  
+                  <div class="group text-center space-y-4 p-6 glass-effect rounded-2xl hover:scale-105 transition-all duration-300 animate-slide-up" style="animation-delay: 0.1s">
+                    <div class="relative mx-auto w-20 h-20 sm:w-24 sm:h-24">
+                      <img src="https://cdn.discordapp.com/avatars/959812686961582120/a_7b6042fa2d1970547c1d031505d297ef.webp?size=128&animated=true" alt="Mr_Vari" class="w-full h-full object-cover rounded-full ring-2 ring-brand-500/50 group-hover:ring-brand-400 transition-all duration-300" />
+                      <div class="absolute inset-0 rounded-full bg-brand-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-white">Mr_Vari</h4>
+                      <p class="text-sm text-brand-400">Owner</p>
+                    </div>
+                  </div>
+                  
+                  <div class="group text-center space-y-4 p-6 glass-effect rounded-2xl hover:scale-105 transition-all duration-300 animate-slide-up" style="animation-delay: 0.2s">
+                    <div class="relative mx-auto w-20 h-20 sm:w-24 sm:h-24">
+                      <img src="https://cdn.discordapp.com/avatars/702511581560307752/b2e02a745b22ce8b83ed13dbe24ba4fd.webp?size=128" alt="koban4ik" class="w-full h-full object-cover rounded-full ring-2 ring-brand-500/50 group-hover:ring-brand-400 transition-all duration-300" />
+                      <div class="absolute inset-0 rounded-full bg-brand-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-white">koban4ik</h4>
+                      <p class="text-sm text-brand-400">Owner</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Co-Owners -->
+              <div class="mb-12">
+                <h3 class="text-xl font-bold text-center mb-6 gradient-text">Co-Owners</h3>
+                <div class="grid grid-cols-2 gap-6 justify-center max-w-2xl mx-auto">
+                  <div class="group text-center space-y-4 p-6 glass-effect rounded-2xl hover:scale-105 transition-all duration-300 animate-slide-up">
+                    <div class="relative mx-auto w-20 h-20 sm:w-24 sm:h-24">
+                      <img src="https://cdn.discordapp.com/avatars/1331299009536725216/fc4d7e9f54e5fffddb1c938befc549f9.webp?size=80" alt="Kaneku_" class="w-full h-full object-cover rounded-full ring-2 ring-brand-500/50 group-hover:ring-brand-400 transition-all duration-300" />
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-white">Kaneku_</h4>
+                      <p class="text-sm text-orange-400">Co-Owner</p>
+                    </div>
+                  </div>
+                  
+                  <div class="group text-center space-y-4 p-6 glass-effect rounded-2xl hover:scale-105 transition-all duration-300 animate-slide-up" style="animation-delay: 0.1s">
+                    <div class="relative mx-auto w-20 h-20 sm:w-24 sm:h-24">
+                      <img src="https://cdn.discordapp.com/avatars/1207075137262850088/e26424582c84e7fb84897cc8e3e27e16.webp?size=80" alt="Shahan" class="w-full h-full object-cover rounded-full ring-2 ring-brand-500/50 group-hover:ring-brand-400 transition-all duration-300" />
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-white">Shahan</h4>
+                      <p class="text-sm text-orange-400">Co-Owner</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- HR -->
+              <div class="mb-12">
+                <h3 class="text-xl font-bold text-center mb-6 gradient-text">Human Resources</h3>
+                <div class="grid grid-cols-1 gap-6 justify-center max-w-sm mx-auto">
+                  <div class="group text-center space-y-4 p-6 glass-effect rounded-2xl hover:scale-105 transition-all duration-300 animate-slide-up">
+                    <div class="relative mx-auto w-20 h-20 sm:w-24 sm:h-24">
+                      <img src="https://cdn.discordapp.com/avatars/1079761643564699658/ff5f33380ef77d6995dbd5b483a97931.webp?size=80" alt="Smarty_xd" class="w-full h-full object-cover rounded-full ring-2 ring-brand-500/50 group-hover:ring-brand-400 transition-all duration-300" />
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-white">Smarty_xd</h4>
+                      <p class="text-sm text-purple-400">HR</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Staff Managers -->
+              <div class="mb-12">
+                <h3 class="text-xl font-bold text-center mb-6 gradient-text">Staff Managers</h3>
+                <div class="grid grid-cols-2 gap-6 justify-center max-w-2xl mx-auto">
+                  <div class="group text-center space-y-4 p-6 glass-effect rounded-2xl hover:scale-105 transition-all duration-300 animate-slide-up">
+                    <div class="relative mx-auto w-20 h-20 sm:w-24 sm:h-24">
+                      <img src="https://cdn.discordapp.com/avatars/957550424611749888/eda82338e1d2145ffd58e39821077a87.webp?size=80" alt="hoppy qt" class="w-full h-full object-cover rounded-full ring-2 ring-brand-500/50 group-hover:ring-brand-400 transition-all duration-300" />
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-white">hoppy qt</h4>
+                      <p class="text-sm text-pink-400">Staff Manager</p>
+                    </div>
+                  </div>
+                  
+                  <div class="group text-center space-y-4 p-6 glass-effect rounded-2xl hover:scale-105 transition-all duration-300 animate-slide-up" style="animation-delay: 0.1s">
+                    <div class="relative mx-auto w-20 h-20 sm:w-24 sm:h-24">
+                      <img src="https://cdn.discordapp.com/avatars/1238914120179515402/b205bf7ee8bd6982da1b2ca2d9ebfbc2.webp?size=128" alt="darkwall" class="w-full h-full object-cover rounded-full ring-2 ring-brand-500/50 group-hover:ring-brand-400 transition-all duration-300" />
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-white">darkwall</h4>
+                      <p class="text-sm text-pink-400">Staff Manager & Dev</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Main Admins -->
+              <div class="mb-12">
+                <h3 class="text-xl font-bold text-center mb-6 gradient-text">Main Administrators</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 justify-center max-w-3xl mx-auto">
+                  <div class="group text-center space-y-4 p-6 glass-effect rounded-2xl hover:scale-105 transition-all duration-300 animate-slide-up">
+                    <div class="relative mx-auto w-20 h-20 sm:w-24 sm:h-24">
+                      <img src="https://cdn.discordapp.com/avatars/730287992345854062/717c27db1dbe9f9f9597ce5c5fa8fd20.webp?size=128" alt="siddhu_piddhu" class="w-full h-full object-cover rounded-full ring-2 ring-brand-500/50 group-hover:ring-brand-400 transition-all duration-300" />
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-white">siddhu_piddhu</h4>
+                      <p class="text-sm text-red-400">Main Admin</p>
+                    </div>
+                  </div>
+                  
+                  <div class="group text-center space-y-4 p-6 glass-effect rounded-2xl hover:scale-105 transition-all duration-300 animate-slide-up" style="animation-delay: 0.1s">
+                    <div class="relative mx-auto w-20 h-20 sm:w-24 sm:h-24">
+                      <img src="https://cdn.discordapp.com/guilds/1246452712653062175/users/1185944532668391486/avatars/a_c799ab5997cbbaf25996ca02eb6a3844.webp?size=128&animated=true" alt="bhoumik" class="w-full h-full object-cover rounded-full ring-2 ring-brand-500/50 group-hover:ring-brand-400 transition-all duration-300" />
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-white">bhoumik</h4>
+                      <p class="text-sm text-red-400">Main Admin</p>
+                    </div>
+                  </div>
+                  
+                  <div class="group text-center space-y-4 p-6 glass-effect rounded-2xl hover:scale-105 transition-all duration-300 animate-slide-up" style="animation-delay: 0.2s">
+                    <div class="relative mx-auto w-20 h-20 sm:w-24 sm:h-24">
+                      <img src="https://cdn.discordapp.com/avatars/770544090474872844/4e0682d7e550d6dcc51165eda20d4c9f.webp?size=80" alt="Pisachi" class="w-full h-full object-cover rounded-full ring-2 ring-brand-500/50 group-hover:ring-brand-400 transition-all duration-300" />
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-white">Pisachi</h4>
+                      <p class="text-sm text-red-400">Main Admin</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- GIVEAWAYS PAGE - Discord Purple Theme -->
+      <div id="giveaways-page" class="page">
+        <div class="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 text-white relative overflow-hidden">
+          <!-- Discord-style floating particles -->
+          <div class="absolute inset-0">
+            <div class="discord-particle" style="top: 10%; left: 20%; animation-delay: 0s;"></div>
+            <div class="discord-particle" style="top: 30%; left: 80%; animation-delay: 1s;"></div>
+            <div class="discord-particle" style="top: 60%; left: 10%; animation-delay: 2s;"></div>
+            <div class="discord-particle" style="top: 80%; left: 70%; animation-delay: 3s;"></div>
+            <div class="discord-particle" style="top: 20%; left: 50%; animation-delay: 4s;"></div>
+          </div>
+
+          <section class="py-8 px-4 sm:px-6 lg:px-8 pt-20 relative z-10">
+            <div class="max-w-4xl mx-auto">
+              <!-- Main Discord Notice -->
+              <div class="relative overflow-hidden rounded-3xl p-8 text-center mb-8" style="background: linear-gradient(135deg, #5865F2, #7289DA); box-shadow: 0 20px 40px rgba(88, 101, 242, 0.3);">
+                <!-- Discord logo pattern background -->
+                <div class="absolute inset-0 opacity-10">
+                  <div class="flex items-center justify-center h-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" viewBox="0 0 256 256" class="text-white">
+                      <path d="M104,140a12,12,0,1,1-12-12A12,12,0,0,1,104,140Zm60-12a12,12,0,1,0,12,12A12,12,0,0,0,164,128Zm74.45,64.9-67,29.71a16.17,16.17,0,0,1-21.71-9.1l-8.11-22q-6.72.45-13.63.46t-13.63-.46l-8.11,22a16.18,16.18,0,0,1-21.71,9.1l-67-29.71a15.93,15.93,0,0,1-9.06-18.51L38,58A16.07,16.07,0,0,1,51,46.14l36.06-5.93a16.22,16.22,0,0,1,18.26,11.88l3.26,12.84Q118.11,64,128,64t19.4.93l3.26-12.84a16.21,16.21,0,0,1,18.26-11.88L205,46.14A16.07,16.07,0,0,1,218,58l29.53,116.38A15.93,15.93,0,0,1,238.45,192.9Z"></path>
+                    </svg>
+                  </div>
+                </div>
+                
+                <div class="relative z-10">
+                  <div class="flex items-center justify-center space-x-4 mb-6">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center animate-bounce-slow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256" class="text-white">
+                        <path d="M104,140a12,12,0,1,1-12-12A12,12,0,0,1,104,140Zm60-12a12,12,0,1,0,12,12A12,12,0,0,0,164,128Zm74.45,64.9-67,29.71a16.17,16.17,0,0,1-21.71-9.1l-8.11-22q-6.72.45-13.63.46t-13.63-.46l-8.11,22a16.18,16.18,0,0,1-21.71,9.1l-67-29.71a15.93,15.93,0,0,1-9.06-18.51L38,58A16.07,16.07,0,0,1,51,46.14l36.06-5.93a16.22,16.22,0,0,1,18.26,11.88l3.26,12.84Q118.11,64,128,64t19.4.93l3.26-12.84a16.21,16.21,0,0,1,18.26-11.88L205,46.14A16.07,16.07,0,0,1,218,58l29.53,116.38A15.93,15.93,0,0,1,238.45,192.9Z"></path>
+                      </svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-white animate-neon-pulse">JOIN THE GIVEAWAY HUB!</h2>
+                  </div>
+                  
+                  <div class="space-y-4 mb-8">
+                    <p class="text-white text-xl font-semibold">🎁 EXCLUSIVE GIVEAWAYS AWAIT</p>
+                    <p class="text-white/90 text-lg">Join our Discord server to participate in all giveaways and connect with our amazing community!</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                      <div class="bg-white/10 rounded-xl p-4 backdrop-blur">
+                        <div class="text-2xl mb-2">💰</div>
+                        <div class="text-sm font-semibold">Million Coin Giveaways</div>
+                      </div>
+                      <div class="bg-white/10 rounded-xl p-4 backdrop-blur">
+                        <div class="text-2xl mb-2">⚔️</div>
+                        <div class="text-sm font-semibold">Rare Item Prizes</div>
+                      </div>
+                      <div class="bg-white/10 rounded-xl p-4 backdrop-blur">
+                        <div class="text-2xl mb-2">👑</div>
+                        <div class="text-sm font-semibold">VIP Rank Upgrades</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <a href="https://discord.gg/We6pY3TARP" target="_blank" class="inline-flex items-center justify-center px-10 py-4 rounded-2xl bg-white text-purple-600 font-bold text-xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 neon-glow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256" class="mr-3">
+                      <path d="M104,140a12,12,0,1,1-12-12A12,12,0,0,1,104,140Zm60-12a12,12,0,1,0,12,12A12,12,0,0,0,164,128Zm74.45,64.9-67,29.71a16.17,16.17,0,0,1-21.71-9.1l-8.11-22q-6.72.45-13.63.46t-13.63-.46l-8.11,22a16.18,16.18,0,0,1-21.71,9.1l-67-29.71a15.93,15.93,0,0,1-9.06-18.51L38,58A16.07,16.07,0,0,1,51,46.14l36.06-5.93a16.22,16.22,0,0,1,18.26,11.88l3.26,12.84Q118.11,64,128,64t19.4.93l3.26-12.84a16.21,16.21,0,0,1,18.26-11.88L205,46.14A16.07,16.07,0,0,1,218,58l29.53,116.38A15.93,15.93,0,0,1,238.45,192.9Z"></path>
+                    </svg>
+                    JOIN DISCORD SERVER
+                  </a>
+                </div>
+              </div>
+
+              <!-- Features Grid -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-br from-purple-600/20 to-blue-600/20 rounded-2xl p-6 backdrop-blur border border-purple-400/30">
+                  <h3 class="text-xl font-bold mb-4 text-purple-300">🎯 How to Enter</h3>
+                  <ul class="space-y-2 text-purple-100">
+                    <li>• Join our Discord server</li>
+                    <li>• Follow giveaway instructions</li>
+                    <li>• React to participate</li>
+                    <li>• Wait for results!</li>
+                  </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-600/20 to-indigo-600/20 rounded-2xl p-6 backdrop-blur border border-blue-400/30">
+                  <h3 class="text-xl font-bold mb-4 text-blue-300">🏆 Prize Types</h3>
+                  <ul class="space-y-2 text-blue-100">
+                    <li>• Fakepixel Skyblock Coins</li>
+                    <li>• Rare Items & Weapons</li>
+                    <li>• Discord Nitro</li>
+                    <li>• Special Roles & Perks</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- UPDATES PAGE - Clean Cyberpunk Theme -->
+      <div id="updates-page" class="page">
+        <div class="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 text-white relative">
+          <!-- Clean hero section -->
+          <section class="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden pt-20">
+            <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10"></div>
+            
+            <div class="relative z-10 max-w-4xl mx-auto text-center">
+              <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Bot <span class="cyber-gradient">Updates</span>
+              </h2>
+              <p class="text-xl text-cyan-200 max-w-2xl mx-auto leading-relaxed">
+                Discover our custom-built Discord bots and their amazing features
+              </p>
+            </div>
+          </section>
+
+          <!-- Bots Section -->
+          <section class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+              <div class="text-center mb-16">
+                <h3 class="text-3xl sm:text-4xl font-bold mb-4">
+                  Our <span class="text-cyan-300">Custom Bots</span>
+                </h3>
+                <p class="text-cyan-200 text-lg max-w-2xl mx-auto">
+                  Professional Discord bots developed exclusively for our community
+                </p>
+              </div>
+              
+              <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Demon Slayer Bot -->
+                <div class="group bg-gradient-to-br from-red-800/20 to-slate-800/40 border border-red-400/30 rounded-2xl overflow-hidden hover:border-red-400 cursor-pointer transition-all duration-500 backdrop-blur" onclick="showBotDetails('demon-slayer')">
+                  <div class="relative h-32 overflow-hidden bg-gradient-to-r from-red-700 to-red-600">
+                    <img src="https://cdn.discordapp.com/banners/1387753660687056996/a_b21df6aa4e4eb7c4869c3f82c9ccd881.webp?size=300&animated=true" alt="Demon Slayer Banner" class="w-full h-full object-cover opacity-70" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-red-900/30 to-transparent"></div>
+                  </div>
+                  
+                  <div class="p-6">
+                    <div class="flex items-center space-x-3 mb-4">
+                      <img src="https://cdn.discordapp.com/avatars/1387753660687056996/ff86c815226e8043b2bf92db7902a3b7.webp?size=80" alt="Demon Slayer Bot" class="w-12 h-12 rounded-lg border border-red-400/50" />
+                      <div>
+                        <h4 class="text-xl font-bold text-red-300">Demon Slayer Bot</h4>
+                        <p class="text-sm text-cyan-300">Economy System</p>
+                      </div>
+                    </div>
+                    
+                    <p class="text-gray-300 mb-4 text-sm">
+                      Hunt demons, earn points, buy powerful upgrades, and climb the leaderboards!
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-2 mb-4 text-xs">
+                      <div class="text-red-300">• Demon Hunting</div>
+                      <div class="text-red-300">• Sword Collection</div>
+                      <div class="text-red-300">• Breathing Styles</div>
+                      <div class="text-red-300">• Weekly Rankings</div>
+                    </div>
+                    
+                    <div class="text-cyan-300 text-sm">
+                      Created by: <span class="text-white">darkwall</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FxG Carry Service Bot -->
+                <div class="group bg-gradient-to-br from-blue-800/20 to-slate-800/40 border border-blue-400/30 rounded-2xl overflow-hidden hover:border-blue-400 cursor-pointer transition-all duration-500 backdrop-blur" onclick="showBotDetails('carry-service')">
+                  <div class="relative h-32 overflow-hidden bg-gradient-to-r from-blue-700 to-blue-600">
+                    <img src="https://cdn.discordapp.com/banners/1390982325835137094/a_bf9e2f65e000e1f79de0bb0d164ff911.webp?size=300&animated=true" alt="FxG Carry Service Banner" class="w-full h-full object-cover opacity-70" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-blue-900/30 to-transparent"></div>
+                  </div>
+                  
+                  <div class="p-6">
+                    <div class="flex items-center space-x-3 mb-4">
+                      <img src="https://cdn.discordapp.com/avatars/1390982325835137094/051dcbd7761f72ffd39b45a12567a59f.webp?size=80" alt="FxG Carry Service Bot" class="w-12 h-12 rounded-lg border border-blue-400/50" />
+                      <div>
+                        <h4 class="text-xl font-bold text-blue-300">Carry Service Bot</h4>
+                        <p class="text-sm text-cyan-300">Ticket Management</p>
+                      </div>
+                    </div>
+                    
+                    <p class="text-gray-300 mb-4 text-sm">
+                      Professional carry services for Hypixel Skyblock dungeons and slayers
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-2 mb-4 text-xs">
+                      <div class="text-blue-300">• Dungeon Carries</div>
+                      <div class="text-blue-300">• Slayer Help</div>
+                      <div class="text-blue-300">• Priority Queue</div>
+                      <div class="text-blue-300">• Chat Logs</div>
+                    </div>
+                    
+                    <div class="text-cyan-300 text-sm">
+                      Created by: <span class="text-white">darkwall</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FxG Support Bot -->
+                <div class="group bg-gradient-to-br from-green-800/20 to-slate-800/40 border border-green-400/30 rounded-2xl overflow-hidden hover:border-green-400 cursor-pointer transition-all duration-500 backdrop-blur" onclick="showBotDetails('support')">
+                  <div class="relative h-32 overflow-hidden bg-gradient-to-r from-green-700 to-green-600">
+                    <img src="https://cdn.discordapp.com/banners/1384845677762449490/a_6239f490d0aaee9bcf51784d2d8c2884.webp?size=300&animated=true" alt="FxG Support Banner" class="w-full h-full object-cover opacity-70" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-green-900/30 to-transparent"></div>
+                  </div>
+                  
+                  <div class="p-6">
+                    <div class="flex items-center space-x-3 mb-4">
+                      <img src="https://cdn.discordapp.com/avatars/1384845677762449490/6a75a68e3d59c57c1062d93ef00939c0.webp?size=80" alt="FxG Support Bot" class="w-12 h-12 rounded-lg border border-green-400/50" />
+                      <div>
+                        <h4 class="text-xl font-bold text-green-300">Support Bot</h4>
+                        <p class="text-sm text-cyan-300">Help Desk</p>
+                      </div>
+                    </div>
+                    
+                    <p class="text-gray-300 mb-4 text-sm">
+                      Advanced support system for giveaway claims and general assistance
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-2 mb-4 text-xs">
+                      <div class="text-green-300">• Giveaway Claims</div>
+                      <div class="text-green-300">• Digital Embeds</div>
+                      <div class="text-green-300">• Case Tracking</div>
+                      <div class="text-green-300">• Quick Response</div>
+                    </div>
+                    
+                    <div class="text-cyan-300 text-sm">
+                      Created by: <span class="text-white">Mr_Vari & darkwall</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Bot Status -->
+          <section class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+              <div class="bg-slate-800/50 backdrop-blur border border-cyan-400/30 rounded-2xl p-8">
+                <h3 class="text-2xl font-bold mb-6 text-center cyber-gradient">Bot Status Overview</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div class="text-center p-4 rounded-xl bg-green-500/10 border border-green-400/20">
+                    <div class="w-4 h-4 bg-green-400 rounded-full mx-auto mb-2 animate-pulse"></div>
+                    <h4 class="font-semibold text-green-300 mb-1">Demon Slayer Bot</h4>
+                    <p class="text-green-100 text-sm">Online & Active</p>
+                  </div>
+                  
+                  <div class="text-center p-4 rounded-xl bg-green-500/10 border border-green-400/20">
+                    <div class="w-4 h-4 bg-green-400 rounded-full mx-auto mb-2 animate-pulse"></div>
+                    <h4 class="font-semibold text-green-300 mb-1">Carry Service Bot</h4>
+                    <p class="text-green-100 text-sm">Online & Active</p>
+                  </div>
+                  
+                  <div class="text-center p-4 rounded-xl bg-green-500/10 border border-green-400/20">
+                    <div class="w-4 h-4 bg-green-400 rounded-full mx-auto mb-2 animate-pulse"></div>
+                    <h4 class="font-semibold text-green-300 mb-1">Support Bot</h4>
+                    <p class="text-green-100 text-sm">Online & Active</p>
+                  </div>
+                </div>
+                
+                <div class="text-center mt-6">
+                  <p class="text-cyan-300">All bots are running smoothly and available 24/7!</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- CREDITS PAGE - Profile Card Theme -->
+      <div id="credits-page" class="page">
+        <!-- Love Particles Background -->
+        <div class="love-particles fixed inset-0 pointer-events-none z-10">
+          <div class="love-particle" style="left: 10%; animation-delay: 0s;">❤️</div>
+          <div class="love-particle" style="left: 20%; animation-delay: 2s;">💖</div>
+          <div class="love-particle" style="left: 30%; animation-delay: 4s;">💕</div>
+          <div class="love-particle" style="left: 40%; animation-delay: 6s;">💗</div>
+          <div class="love-particle" style="left: 50%; animation-delay: 8s;">💓</div>
+          <div class="love-particle" style="left: 60%; animation-delay: 10s;">💝</div>
+          <div class="love-particle" style="left: 70%; animation-delay: 12s;">💘</div>
+          <div class="love-particle" style="left: 80%; animation-delay: 14s;">💞</div>
+          <div class="love-particle" style="left: 90%; animation-delay: 16s;">💟</div>
+          <div class="love-particle" style="left: 15%; animation-delay: 18s;">❣️</div>
+          <div class="love-particle" style="left: 35%; animation-delay: 20s;">💌</div>
+          <div class="love-particle" style="left: 55%; animation-delay: 22s;">💋</div>
+          <div class="love-particle" style="left: 75%; animation-delay: 24s;">💖</div>
+          <div class="love-particle" style="left: 85%; animation-delay: 26s;">❤️</div>
+        </div>
+
+        <div class="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50 text-gray-900 relative z-20">
+          <section class="py-16 px-4 sm:px-6 lg:px-8 pt-20">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl sm:text-5xl font-light mb-6 text-gray-800">
+          Made with <span class="text-red-500 text-6xl">❤️</span> Credits
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-pink-300 via-red-400 to-purple-500 mx-auto mb-6"></div>
+            <p class="text-gray-600 text-lg font-light">The talented individuals who poured their hearts into this project</p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <!-- darkwall -->
+            <div class="group text-center">
+          <div class="minimal-card rounded-3xl p-0 overflow-hidden hover:scale-105 transition-all duration-500 border-2 border-transparent hover:border-pink-300">
+            <!-- Banner Placeholder -->
+            <div class="w-full h-24 bg-pink-200 flex items-center justify-center">
+              <!-- Replace with banner image -->
+              <img src="https://media.discordapp.net/attachments/1348347760054632539/1394690455895150692/38eb9ef67fe14e68cc516fd025f8d559.gif?ex=6877ba34&is=687668b4&hm=dac4706eea84356666ad8ce31a88d350a139133655bf3d0d9de37018193ad9ac&=" alt="darkwall banner" class="w-full h-full object-cover rounded-none" />
+            </div>
+            <div class="relative flex flex-col items-center -mt-12 pb-8 px-6">
+              <div class="relative mx-auto w-24 h-24 mb-4">
+            <img src="https://cdn.discordapp.com/avatars/1238914120179515402/b205bf7ee8bd6982da1b2ca2d9ebfbc2.webp?size=128" alt="darkwall" class="w-full h-full object-cover rounded-full shadow-lg ring-4 ring-pink-200 group-hover:ring-pink-400 transition-all duration-300" />
+            <div class="absolute -top-2 -right-2 text-xl">👑</div>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-1">darkwall</h3>
+              <p class="text-pink-600 font-medium mb-2">👑 Main Developer</p>
+              <p class="text-gray-600 text-sm leading-relaxed">Main architect of the website and bot ecosystem, bringing innovative solutions with exceptional skill and dedication.</p>
+            </div>
+          </div>
+            </div>
+
+            <!-- siddhu -->
+            <div class="group text-center">
+            <div class="minimal-card rounded-3xl p-0 overflow-hidden hover:scale-105 transition-all duration-500 border-2 border-transparent hover:border-purple-300">
+            <!-- Banner Image -->
+            <div class="w-full h-24 bg-purple-200 flex items-center justify-center">
+              <img src="https://cdn.discordapp.com/banners/730287992345854062/a_925b7a898d4bc3004f502b5d6e43b31d.webp?size=600&animated=true" alt="Miss.siddhu banner" class="w-full h-full object-cover rounded-none" />
+            </div>
+            <div class="relative flex flex-col items-center -mt-12 pb-8 px-6">
+              <div class="relative mx-auto w-24 h-24 mb-4">
+            <img src="https://cdn.discordapp.com/avatars/730287992345854062/717c27db1dbe9f9f9597ce5c5fa8fd20.webp?size=128" alt="Miss.siddhu" class="w-full h-full object-cover rounded-full shadow-lg ring-4 ring-purple-200 group-hover:ring-purple-400 transition-all duration-300" />
+            <div class="absolute -top-2 -right-2 text-xl">🎨</div>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-1">Miss.siddhu</h3>
+              <p class="text-purple-600 font-medium mb-2">🎨 Design Contributor</p>
+              <p class="text-gray-600 text-sm leading-relaxed">Creative vision and user experience expertise, shaping the visual identity with artistic passion.</p>
+            </div>
+            </div>
+            </div>
+
+            <!-- psycho_129 -->
+            <div class="group text-center">
+            <div class="minimal-card rounded-3xl p-0 overflow-hidden hover:scale-105 transition-all duration-500 border-2 border-transparent hover:border-green-300"></div>
+            <!-- Banner Image -->
+            <div class="w-full h-24 bg-green-200 flex items-center justify-center">
+              <img src="https://cdn.discordapp.com/avatar-decoration-presets/a_3700e799d39895e502f4e9be46ceb325.png?size=160&passthrough=true" alt="psycho_129 banner" class="w-full h-full object-cover rounded-none" />
+            </div>
+            <div class="relative flex flex-col items-center -mt-12 pb-8 px-6">
+              <div class="relative mx-auto w-24 h-24 mb-4">
+            <img src="https://cdn.discordapp.com/avatars/1250663992427413504/096436d88d844bedfc285f15a344421c.webp?size=128" alt="psycho_129" class="w-full h-full object-cover rounded-full shadow-lg ring-4 ring-green-200 group-hover:ring-green-400 transition-all duration-300" />
+            <div class="absolute -top-2 -right-2 text-xl">📝</div>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-1">psycho_129</h3>
+              <p class="text-green-600 font-medium mb-2">📝 Content Contributor</p>
+              <p class="text-gray-600 text-sm leading-relaxed">Strategic planning and content development, ensuring quality and engagement with heartfelt care.</p>
+            </div>
+            </div>
+            </div>
+            </div>
+
+          <!-- Thank You Section -->
+          <div class="text-center">
+            <div class="minimal-card rounded-3xl p-12 max-w-2xl mx-auto border-2 border-pink-200 hover:border-red-300 transition-all duration-500">
+          <div class="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-pink-200 to-red-300 rounded-full flex items-center justify-center animate-pulse-slow">
+            <div class="text-3xl">❤️</div>
+          </div>
+          <h3 class="text-2xl font-light mb-4 text-gray-800">Built with Love & Purpose</h3>
+          <p class="text-gray-600 leading-relaxed mb-6">This website was crafted with pure love, dedication, and attention to detail for the Fakepixel Giveaways community. Every pixel, every animation, every interaction was thoughtfully designed to spread joy and create magical moments.</p>
+          <div class="flex items-center justify-center space-x-2 mb-4">
+            <span class="text-2xl">💖</span>
+            <span class="text-pink-600 font-medium">Made with endless love for our community</span>
+            <span class="text-2xl">💖</span>
+          </div>
+          <div class="text-sm text-gray-500 font-light">
+            "Thank you for being part of our magical journey. You make everything worthwhile! 💕"
+          </div>
+            </div>
+          </div>
+        </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- CONTACT PAGE - Discord Purple Theme -->
+      <div id="contact-page" class="page">
+        <div class="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 text-white relative overflow-hidden">
+          <!-- Discord-style floating particles -->
+          <div class="absolute inset-0">
+            <div class="discord-particle" style="top: 15%; left: 25%; animation-delay: 0s;"></div>
+            <div class="discord-particle" style="top: 35%; left: 75%; animation-delay: 1s;"></div>
+            <div class="discord-particle" style="top: 55%; left: 15%; animation-delay: 2s;"></div>
+            <div class="discord-particle" style="top: 75%; left: 65%; animation-delay: 3s;"></div>
+            <div class="discord-particle" style="top: 25%; left: 45%; animation-delay: 4s;"></div>
+            <div class="discord-particle" style="top: 85%; left: 85%; animation-delay: 5s;"></div>
+          </div>
+
+          <section class="relative py-24 px-4 sm:px-6 lg:px-8 pt-20 z-10">
+            <div class="max-w-4xl mx-auto text-center">
+              <div class="mb-16">
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                  <span class="text-white">
+                    CONTACT <span class="text-purple-300">HUB</span>
+                  </span>
+                </h2>
+                <p class="text-xl text-purple-200 max-w-2xl mx-auto leading-relaxed">
+                  Connect with our amazing community through Discord!
+                </p>
+              </div>
+              
+              <!-- Discord Servers Grid -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                
+                <!-- FxG Main Server -->
+                <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-purple-600/20 to-purple-900/40 backdrop-blur border-2 border-purple-500/30 p-8 hover:border-purple-400 transition-all duration-500 neon-glow hover:scale-105">
+                  <!-- Animated background -->
+                  <div class="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <div class="relative z-10">
+                    <div class="mb-6">
+                      <div class="w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-purple-500/30 to-purple-700/50 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 neon-glow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 256 256" class="text-purple-300">
+                          <path d="M104,140a12,12,0,1,1-12-12A12,12,0,0,1,104,140Zm60-12a12,12,0,1,0,12,12A12,12,0,0,0,164,128Zm74.45,64.9-67,29.71a16.17,16.17,0,0,1-21.71-9.1l-8.11-22q-6.72.45-13.63.46t-13.63-.46l-8.11,22a16.18,16.18,0,0,1-21.71,9.1l-67-29.71a15.93,15.93,0,0,1-9.06-18.51L38,58A16.07,16.07,0,0,1,51,46.14l36.06-5.93a16.22,16.22,0,0,1,18.26,11.88l3.26,12.84Q118.11,64,128,64t19.4.93l3.26-12.84a16.21,16.21,0,0,1,18.26-11.88L205,46.14A16.07,16.07,0,0,1,218,58l29.53,116.38A15.93,15.93,0,0,1,238.45,192.9Z"></path>
+                        </svg>
+                      </div>
+                      <h3 class="text-2xl font-orbitron font-bold text-purple-300 mb-3">FxG MAIN SERVER</h3>
+                      <p class="text-purple-100 mb-6 leading-relaxed font-mono text-sm">
+                        Main hub for giveaways, events, and community interaction with fellow Minecraft enthusiasts.
+                      </p>
+                    </div>
+                    
+                    <div class="space-y-3 mb-6">
+                      <div class="flex items-center justify-center space-x-3 text-purple-300 font-mono text-sm">
+                        <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                        <span>Active Community</span>
+                      </div>
+                      <div class="flex items-center justify-center space-x-3 text-purple-300 font-mono text-sm">
+                        <div class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
+                        <span>Daily Giveaways</span>
+                      </div>
+                      <div class="flex items-center justify-center space-x-3 text-purple-300 font-mono text-sm">
+                        <div class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                        <span>24/7 Moderation</span>
+                      </div>
+                    </div>
+                    
+                    <a href="https://discord.gg/We6pY3TARP" target="_blank" class="block w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-purple-500 to-purple-600 text-white font-orbitron font-bold text-lg hover:from-purple-400 hover:to-purple-500 transform hover:scale-105 transition-all duration-300 neon-glow">
+                      JOIN MAIN SERVER
+                    </a>
+                  </div>
+                </div>
+
+                <!-- FxS Support Server -->
+                <div class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-cyan-600/20 to-cyan-900/40 backdrop-blur border-2 border-cyan-500/30 p-8 hover:border-cyan-400 transition-all duration-500 neon-glow hover:scale-105">
+                  <!-- Animated background -->
+                  <div class="absolute inset-0 bg-gradient-to-r from-cyan-600/10 to-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <div class="relative z-10">
+                    <div class="mb-6">
+                      <div class="w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-cyan-500/30 to-cyan-700/50 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 neon-glow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 256 256" class="text-cyan-300">
+                          <path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path>
+                        </svg>
+                      </div>
+                      <h3 class="text-2xl font-orbitron font-bold text-cyan-300 mb-3">FxS SUPPORT</h3>
+                      <p class="text-cyan-100 mb-6 leading-relaxed font-mono text-sm">
+                        Dedicated support system for Fakepixel Giveaways. Expert assistance available 24/7.
+                      </p>
+                    </div>
+                    
+                    <div class="space-y-3 mb-6">
+                      <div class="flex items-center justify-center space-x-3 text-cyan-300 font-mono text-sm">
+                        <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                        <span>Expert Support</span>
+                      </div>
+                      <div class="flex items-center justify-center space-x-3 text-cyan-300 font-mono text-sm">
+                        <div class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
+                        <span>Ticket System</span>
+                      </div>
+                      <div class="flex items-center justify-center space-x-3 text-cyan-300 font-mono text-sm">
+                        <div class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                        <span>Fast Response</span>
+                      </div>
+                    </div>
+                    
+                    <a href="https://discord.gg/qXUfEDQU4j" target="_blank" class="block w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-cyan-500 to-cyan-600 text-white font-orbitron font-bold text-lg hover:from-cyan-400 hover:to-cyan-500 transform hover:scale-105 transition-all duration-300 neon-glow">
+                      JOIN SUPPORT
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+              
+              <!-- Features Overview -->
+              <div class="mt-16">
+                <div class="bg-gradient-to-r from-purple-900/30 to-cyan-900/30 backdrop-blur rounded-3xl p-8 border border-purple-500/30 neon-glow">
+                  <h3 class="text-2xl font-orbitron font-bold mb-6 text-transparent bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text">
+                    CONNECTION BENEFITS
+                  </h3>
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center p-4 rounded-2xl bg-purple-500/10 border border-purple-500/20">
+                      <div class="text-3xl mb-2">🎁</div>
+                      <h4 class="font-orbitron font-semibold text-purple-300 mb-2">Amazing Rewards</h4>
+                      <p class="text-purple-100 text-sm font-mono">Win incredible prizes worth millions</p>
+                    </div>
+                    
+                    <div class="text-center p-4 rounded-2xl bg-cyan-500/10 border border-cyan-500/20">
+                      <div class="text-3xl mb-2">👥</div>
+                      <h4 class="font-orbitron font-semibold text-cyan-300 mb-2">Global Community</h4>
+                      <p class="text-cyan-100 text-sm font-mono">Connect with passionate gamers worldwide</p>
+                    </div>
+                    
+                    <div class="text-center p-4 rounded-2xl bg-pink-500/10 border border-pink-500/20">
+                      <div class="text-3xl mb-2">🛡️</div>
+                      <h4 class="font-orbitron font-semibold text-pink-300 mb-2">Pro Support</h4>
+                      <p class="text-pink-100 text-sm font-mono">Expert help from experienced staff</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Universal Footer -->
+      <footer id="footer" class="relative z-20 py-12 px-4 sm:px-6 lg:px-8 transition-all duration-300">
+        <div class="max-w-7xl mx-auto text-center">
+          <div class="flex items-center justify-center space-x-3 mb-6">
+            <div class="w-8 h-8 text-brand-500 animate-float">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                <path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z" fill="currentColor"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold gradient-text">Fakepixel Giveaways</h3>
+          </div>
+          <p class="mb-4">Building an amazing Minecraft community, one giveaway at a time.</p>
+          <p class="text-sm mb-2">Made for FxG, made by darkwall</p>
+          <p class="text-sm">© 2025 Fakepixel Giveaways. All rights reserved.</p>
+        </div>
+      </footer>
+
+    </div>
+
+    <script>
+      let currentPage = 'home';
+
+      // Matrix effect for staff page
+      function createMatrixRain() {
+        const matrixBg = document.querySelector('.matrix-bg');
+        if (!matrixBg) return;
+        
+        matrixBg.innerHTML = '';
+        const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()';
+        
+        for (let i = 0; i < 50; i++) {
+          const char = document.createElement('div');
+          char.className = 'matrix-char';
+          char.textContent = chars[Math.floor(Math.random() * chars.length)];
+          char.style.left = Math.random() * 100 + '%';
+          char.style.animationDuration = (Math.random() * 10 + 10) + 's';
+          char.style.animationDelay = Math.random() * 10 + 's';
+          matrixBg.appendChild(char);
+        }
+      }
+
+      function showPage(pageId) {
+        // Hide all pages
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => {
+          page.classList.remove('active');
+        });
+
+        // Show selected page
+        const targetPage = document.getElementById(pageId + '-page');
+        if (targetPage) {
+          targetPage.classList.add('active');
+          currentPage = pageId;
+        }
+
+        // Update page-specific styling
+        updatePageStyling(pageId);
+
+        // Update navigation
+        updateNavigation();
+
+        // Hide mobile menu if open
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.add('hidden');
+
+        // Scroll to top
+        window.scrollTo(0, 0);
+
+        // Initialize page-specific effects
+        if (pageId === 'staff') {
+          setTimeout(createMatrixRain, 100);
+        }
+      }
+
+      function updatePageStyling(pageId) {
+        const header = document.getElementById('header');
+        const footer = document.getElementById('footer');
+        
+        // Reset classes
+        header.className = 'fixed top-0 left-0 right-0 z-50 transition-all duration-300';
+        footer.className = 'relative z-20 py-12 px-4 sm:px-6 lg:px-8 transition-all duration-300';
+
+        switch(pageId) {
+          case 'home':
+            header.classList.add('glass-effect', 'border-b', 'border-dark-700/50');
+            footer.classList.add('bg-dark-900', 'border-t', 'border-dark-700/50', 'text-dark-400');
+            break;
+          case 'staff':
+            header.classList.add('glass-effect', 'border-b', 'border-dark-700/50');
+            footer.classList.add('bg-dark-900', 'border-t', 'border-dark-700/50', 'text-dark-400');
+            break;
+          case 'giveaways':
+            header.classList.add('bg-purple-900/80', 'backdrop-blur', 'border-b', 'border-purple-500/30');
+            footer.classList.add('bg-purple-900', 'border-t', 'border-purple-500/30', 'text-purple-100');
+            break;
+          case 'updates':
+            header.classList.add('bg-slate-900/90', 'backdrop-blur', 'border-b', 'border-cyan-400/30');
+            footer.classList.add('bg-slate-900', 'border-t', 'border-cyan-400/30', 'text-cyan-300');
+            break;
+          case 'credits':
+            header.classList.add('bg-pink-50/90', 'backdrop-blur', 'border-b', 'border-pink-200', 'text-gray-900');
+            footer.classList.add('bg-pink-50', 'border-t', 'border-pink-200', 'text-gray-600');
+            break;
+          case 'contact':
+            header.classList.add('bg-purple-900/80', 'backdrop-blur', 'border-b', 'border-purple-500/30');
+            footer.classList.add('bg-purple-900', 'border-t', 'border-purple-500/30', 'text-purple-100');
+            break;
+        }
+      }
+
+      function updateNavigation() {
+        const navItems = document.querySelectorAll('.nav-item');
+        navItems.forEach(item => {
+          item.classList.remove('active');
+          
+          // Update colors based on current page
+          switch(currentPage) {
+            case 'home':
+              item.className = 'nav-item text-sm font-medium text-dark-300 hover:text-white transition-colors duration-200';
+              break;
+            case 'staff':
+              item.className = 'nav-item text-sm font-medium text-dark-300 hover:text-white transition-colors duration-200';
+              break;
+            case 'giveaways':
+              item.className = 'nav-item text-sm font-medium text-purple-300 hover:text-white transition-colors duration-200';
+              break;
+            case 'updates':
+              item.className = 'nav-item text-sm font-medium text-cyan-300 hover:text-white transition-colors duration-200';
+              break;
+            case 'credits':
+              item.className = 'nav-item text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-200';
+              break;
+            case 'contact':
+              item.className = 'nav-item text-sm font-medium text-purple-300 hover:text-white transition-colors duration-200';
+              break;
+          }
+        });
+
+        // Highlight current page link
+        const currentLink = document.querySelector(`[onclick="showPage('${currentPage}')"]`);
+        if (currentLink) {
+          currentLink.classList.add('active');
+          switch(currentPage) {
+            case 'home':
+              currentLink.classList.add('text-white');
+              break;
+            case 'staff':
+              currentLink.classList.add('text-white');
+              break;
+            case 'giveaways':
+              currentLink.classList.add('text-white');
+              break;
+            case 'updates':
+              currentLink.classList.add('text-white');
+              break;
+            case 'credits':
+              currentLink.classList.add('text-gray-900');
+              break;
+            case 'contact':
+              currentLink.classList.add('text-white');
+              break;
+          }
+        }
+      }
+
+      function toggleMobileMenu() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+      }
+
+      function showBotDetails(botType) {
+        let content = '';
+        let bgColor = '';
+        
+        switch(botType) {
+          case 'demon-slayer':
+            bgColor = 'from-red-800/90 to-slate-900';
+            content = `
+              <div class="bg-gradient-to-br ${bgColor} rounded-3xl p-8 max-w-4xl mx-auto border border-red-400/50 backdrop-blur">
+                <div class="text-center mb-8">
+                  <h2 class="text-3xl font-bold mb-4 text-red-300">Demon Slayer Bot</h2>
+                  <p class="text-cyan-300 mb-2">Created by darkwall</p>
+                </div>
+                
+                <div class="space-y-6">
+                  <div>
+                    <h3 class="text-xl font-semibold mb-3 text-red-200">Bot Features</h3>
+                    <p class="text-gray-200">Kill demons to earn points and use them to purchase powerful items and abilities:</p>
+                  </div>
+                  
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-800/50 rounded-xl p-6 border border-red-400/30">
+                      <h4 class="font-semibold text-red-300 mb-2">🗡️ Sword Collection</h4>
+                      <p class="text-gray-300 text-sm">Purchase various demon slayer swords to increase your demon-killing power</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 rounded-xl p-6 border border-red-400/30">
+                      <h4 class="font-semibold text-red-300 mb-2">💨 Breathing Styles</h4>
+                      <p class="text-gray-300 text-sm">Unlock breathing techniques that multiply your point earnings</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 rounded-xl p-6 border border-red-400/30">
+                      <h4 class="font-semibold text-red-300 mb-2">🏆 Weekly Rankings</h4>
+                      <p class="text-gray-300 text-sm">Compete for the top spot and win random rewards each week</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 rounded-xl p-6 border border-red-400/30">
+                      <h4 class="font-semibold text-red-300 mb-2">🎁 Random Rewards</h4>
+                      <p class="text-gray-300 text-sm">Top players receive surprise rewards when leaderboards reset</p>
+                    </div>
+                  </div>
+                  
+                  <div class="text-center">
+                    <button onclick="closeModal()" class="px-6 py-3 rounded-xl bg-red-500 text-white font-semibold hover:bg-red-400 transition-colors duration-200">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            `;
+            break;
+            
+          case 'carry-service':
+            bgColor = 'from-blue-800/90 to-slate-900';
+            content = `
+              <div class="bg-gradient-to-br ${bgColor} rounded-3xl p-8 max-w-4xl mx-auto border border-blue-400/50 backdrop-blur">
+                <div class="text-center mb-8">
+                  <h2 class="text-3xl font-bold mb-4 text-blue-300">Carry Service Bot</h2>
+                  <p class="text-cyan-300 mb-2">Created by darkwall</p>
+                </div>
+                
+                <div class="space-y-6">
+                  <div>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-200">Bot Features</h3>
+                    <p class="text-gray-200">A comprehensive ticket system for Hypixel Skyblock carry services:</p>
+                  </div>
+                  
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-800/50 rounded-xl p-6 border border-blue-400/30">
+                      <h4 class="font-semibold text-blue-300 mb-2">🏰 Dungeon Carries</h4>
+                      <p class="text-gray-300 text-sm">Request carries for any dungeon floor with professional players</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 rounded-xl p-6 border border-blue-400/30">
+                      <h4 class="font-semibold text-blue-300 mb-2">⚔️ Slayer Help</h4>
+                      <p class="text-gray-300 text-sm">Get help with slayer bosses from experienced players</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 rounded-xl p-6 border border-blue-400/30">
+                      <h4 class="font-semibold text-blue-300 mb-2">🆘 Emergency Support</h4>
+                      <p class="text-gray-300 text-sm">Emergency assistance feature for urgent carry requests</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 rounded-xl p-6 border border-blue-400/30">
+                      <h4 class="font-semibold text-blue-300 mb-2">🎯 Priority Queue</h4>
+                      <p class="text-gray-300 text-sm">Choose priority levels for faster service</p>
+                    </div>
+                  </div>
+                  
+                  <div class="text-center">
+                    <button onclick="closeModal()" class="px-6 py-3 rounded-xl bg-blue-500 text-white font-semibold hover:bg-blue-400 transition-colors duration-200">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            `;
+            break;
+            
+          case 'support':
+            bgColor = 'from-green-800/90 to-slate-900';
+            content = `
+              <div class="bg-gradient-to-br ${bgColor} rounded-3xl p-8 max-w-4xl mx-auto border border-green-400/50 backdrop-blur">
+                <div class="text-center mb-8">
+                  <h2 class="text-3xl font-bold mb-4 text-green-300">Support Bot</h2>
+                  <p class="text-cyan-300 mb-2">Created by Mr_Vari & darkwall</p>
+                </div>
+                
+                <div class="space-y-6">
+                  <div>
+                    <h3 class="text-xl font-semibold mb-3 text-green-200">Bot Features</h3>
+                    <p class="text-gray-200">A comprehensive ticket system for giveaway claims and general support:</p>
+                  </div>
+                  
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-800/50 rounded-xl p-6 border border-green-400/30">
+                      <h4 class="font-semibold text-green-300 mb-2">🎁 Giveaway Claims</h4>
+                      <p class="text-gray-300 text-sm">Streamlined system for claiming giveaway prizes</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 rounded-xl p-6 border border-green-400/30">
+                      <h4 class="font-semibold text-green-300 mb-2">💬 General Support</h4>
+                      <p class="text-gray-300 text-sm">Get help with any server-related questions or issues</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 rounded-xl p-6 border border-green-400/30">
+                      <h4 class="font-semibold text-green-300 mb-2">✨ Digital Embeds</h4>
+                      <p class="text-gray-300 text-sm">Beautiful, professional-looking ticket interfaces</p>
+                    </div>
+                    
+                    <div class="bg-slate-800/50 rounded-xl p-6 border border-green-400/30">
+                      <h4 class="font-semibold text-green-300 mb-2">📋 Case Management</h4>
+                      <p class="text-gray-300 text-sm">Advanced case tracking and management system</p>
+                    </div>
+                  </div>
+                  
+                  <div class="text-center">
+                    <button onclick="closeModal()" class="px-6 py-3 rounded-xl bg-green-500 text-white font-semibold hover:bg-green-400 transition-colors duration-200">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            `;
+            break;
+        }
+        
+        // Create modal overlay
+        const modalOverlay = document.createElement('div');
+        modalOverlay.id = 'modal-overlay';
+        modalOverlay.className = 'fixed inset-0 bg-black/80 backdrop-blur z-50 flex items-center justify-center p-4';
+        modalOverlay.innerHTML = content;
+        
+        document.body.appendChild(modalOverlay);
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('modal-overlay');
+        if (modal) {
+          document.body.removeChild(modal);
+        }
+      }
+
+      // Show loading overlay during page transitions
+      function showLoading() {
+        const loadingOverlay = document.getElementById('loading-overlay');
+        loadingOverlay.classList.add('active');
+      }
+
+      function hideLoading() {
+        const loadingOverlay = document.getElementById('loading-overlay');
+        loadingOverlay.classList.remove('active');
+      }
+
+      // Initialize page
+      document.addEventListener('DOMContentLoaded', function() {
+        // Show opening animation with typing effect
+        const openingAnimation = document.getElementById('opening-animation');
+        startTypingAnimation();
+        
+        // Hide opening animation after typing completes + fade out
+        setTimeout(() => {
+          openingAnimation.classList.add('fade-out');
+          setTimeout(() => {
+            openingAnimation.style.display = 'none';
+          }, 1200);
+        }, 4500);
+
+        updatePageStyling('home');
+        updateNavigation();
+        
+        // Close modal when clicking outside
+        document.addEventListener('click', function(e) {
+          if (e.target && e.target.id === 'modal-overlay') {
+            closeModal();
+          }
+        });
+      });
+
+      // Typing animation function
+      function startTypingAnimation() {
+        const text = "Fakepixel Giveaways";
+        const typingElement = document.getElementById('typing-text');
+        const cursor = document.getElementById('cursor');
+        let index = 0;
+        
+        function typeWriter() {
+          if (index < text.length) {
+            typingElement.textContent += text.charAt(index);
+            index++;
+            // Smoother typing with variable speeds
+            const speed = Math.random() * 50 + 80;
+            setTimeout(typeWriter, speed);
+          } else {
+            // Smooth fade out sequence
+            setTimeout(() => {
+              cursor.style.animation = 'smoothBlink 0.5s ease-in-out infinite';
+              
+              // Add final glow effect
+              typingElement.style.filter = 'drop-shadow(0 0 30px rgba(229, 161, 25, 0.6))';
+              
+              setTimeout(() => {
+                cursor.classList.add('transition-opacity', 'duration-700', 'ease-out');
+                cursor.style.opacity = '0';
+                
+                typingElement.classList.add('text-fade-out');
+              }, 800);
+            }, 500);
+          }
+        }
+        
+        typeWriter();
+      }
+
+      // Enhanced showPage function with loading animation
+      function showPage(pageId) {
+        // Show loading animation
+        showLoading();
+        
+        setTimeout(() => {
+          // Hide all pages with smooth transition
+          const pages = document.querySelectorAll('.page');
+          pages.forEach(page => {
+            page.classList.remove('active');
+            page.classList.add('transition-opacity', 'duration-300', 'ease-out');
+          });
+
+          // Show selected page
+          const targetPage = document.getElementById(pageId + '-page');
+          if (targetPage) {
+            targetPage.classList.add('active');
+            currentPage = pageId;
+          }
+
+          // Update page-specific styling
+          updatePageStyling(pageId);
+
+          // Update navigation
+          updateNavigation();
+
+          // Hide mobile menu if open
+          const mobileMenu = document.getElementById('mobile-menu');
+          mobileMenu.classList.add('hidden');
+
+          // Smooth scroll to top
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+
+          // Initialize page-specific effects
+          if (pageId === 'staff') {
+            setTimeout(createMatrixRain, 150);
+          }
+
+          // Hide loading animation after a short delay
+          setTimeout(() => {
+            hideLoading();
+          }, 400);
+        }, 150);
+      }
+    </script>
+</body>
+</html>
